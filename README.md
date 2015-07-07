@@ -40,7 +40,7 @@ The following Open Source protocols and formats were used to implement the proto
 
 The architecture of the prototype consists of four distinct layers. They are described below.
 
-![Figure 1: Application design - Prototype Layers](http://)
+![Figure 1: Application design - Prototype Layers](https://github.com/mbtsllc/Agile/blob/master/Images/4-Application-Design.jpg)
 
 ##### 4.1 View Layer
 
@@ -68,26 +68,27 @@ The prototype is deployed on Microsoft Azure Cloud Services. A virtual machhine 
 
 Jenkins ([https://jenkins-ci.org/](https://jenkins-ci.org/)) is an open source software widely used for automatically building testing and deployment software. For this project, Jenkins was installed and configured to automatically checkout source code from GitHub, compile and build the application and deploy it into the Microsoft Azure Cloud Sevices.
 
-![Figure 2: Implementation of Jenkins continuous integration system](http://)
+![Figure 2: Implementation of Jenkins continuous integration system](https://github.com/mbtsllc/Agile/blob/master/Images/5.2-Jenkins.jpg)
 
 ##### 5.3 Containerization
 
 Docker ([www.docker.com](https://www.docker.com)) was used as a container to distrbute the application on test machine and on the PaaS cloud.
 
+![Figure 3: Implementation of Docker](https://github.com/mbtsllc/Agile/blob/master/Images/5.3-Docker.jpg)
+
 ##### 5.4 Configuration Management
 
 The Marquis team utilized Chef [www.chef.io](http://www.chef.io) for provisioning our test virtual box. Chef treats infrastructure as code and allow us to provision and configue the VM from the Chef server.
 
-![](http://)
-![](http://)
-![](http://)
-![Figure 3: Implementation of Docker and Chef](http://)
+![](https://github.com/mbtsllc/Agile/blob/master/Images/5.4.1.jpg)
+![](https://github.com/mbtsllc/Agile/blob/master/Images/5.4.2.jpg)
+![Figure 4: Implementation of Chef](https://github.com/mbtsllc/Agile/blob/master/Images/5.4.3.jpg)
 
 ##### 5.5 Development, Build and Deployment Flow
 
 The diagram below shows the high-level process flow from development to deployment.
 
-![Figure 4: Development, Build and Deployment Flow](http://)
+![Figure 4: Development, Build and Deployment Flow](https://github.com/mbtsllc/Agile/blob/master/Images/Flow-diagram.jpg)
 
 #### Installation
 
