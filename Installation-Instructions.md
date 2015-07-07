@@ -26,7 +26,7 @@ The following steps will install Apache Tomcat on the Linux server>
 
 1. Update your apt-get package lists: sudo apt-get update
 1. Run the following command to start the installation: sudo apt-get install tomcat7. This will install Tomcat and its dependencies and it will also create the tomcat7 user. It also starts Tomcat with its default settings.
-1. Check that Tomcat has been installed and running by accessing the default splash page by going to the domain: [http://server_IP_address:8080](http://server_IP_address:8080)
+1. Check that Tomcat has been installed and running by accessing the default splash page by going to the domain: http://server_IP_address:8080
 
 **Install Prototype**
 
