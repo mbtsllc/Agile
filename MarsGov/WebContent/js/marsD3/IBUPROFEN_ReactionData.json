@@ -1,0 +1,202 @@
+{
+"name":"Reaction",
+"children":[
+	{
+		"name":"Dyspepsia",
+		"children":[
+			{
+				"name":"Total count(635)",
+				"children":[
+					{"name":"Serious Report (459)", "size":"459"},
+					{"name":"Not Serious (176)", "size":"176"}
+				]
+			}
+			,
+					{"name":"Score (0.6)", "size":"60"}
+		]
+	},
+	{
+		"name":"Renal impairment",
+		"children":[
+			{
+				"name":"Total count(635)",
+				"children":[
+					{"name":"Serious Report (459)", "size":"459"},
+					{"name":"Not Serious (176)", "size":"176"}
+				]
+			},
+					{"name":"Score (0.6)", "size":"60"}
+		]
+	},
+	{
+		"name":"Dyspepsia",
+		"children":[
+			{
+				"name":"Total count(271)",
+				"children":[
+					{"name":"Serious Report (269)", "size":"459"},
+					{"name":"Not Serious (2)", "size":"176"}
+				]
+			},
+					{"name":"Score (0.95)", "size":"60"}
+		]
+	},
+	{
+		"name":"Lethargy",
+		"children":[
+			{
+				"name":"Total count(301)",
+				"children":[
+					{"name":"Serious Report (459)", "size":"459"},
+					{"name":"Not Serious (176)", "size":"176"}
+				]
+			},
+			{"name":"Score (0.6)", "size":"60"}
+		]
+	},
+	
+	{
+		"name":"Weight decreased",
+		"children":[
+			{
+				"name":"Total count(940)",
+				"children":[
+					{"name":"Serious Report (-)", "size":"459"},
+					{"name":"Not Serious (-)", "size":"176"}
+				]
+			},
+			{"name":"Score (0.6)", "size":"60"}
+		]
+	},
+	{
+		"name":"Malaise",
+		"children":[
+			{
+				"name":"Total count(1128)",
+				"children":[
+					{"name":"Serious Report (-)", "size":"459"},
+					{"name":"Not Serious (-)", "size":"176"}
+				]
+			},
+			{"name":"Score (0.3)", "size":"30"}
+		]
+	},
+	{
+		"name":"Renal impairment",
+		"children":[
+			{
+				"name":"Total count(271)",
+				"children":[
+					{"name":"Serious Report (-)", "size":"459"},
+					{"name":"Not Serious (-)", "size":"176"}
+				]
+			},
+			{"name":"Score (0.3)", "size":"30"}
+		]
+	},
+	{
+		"name":"Diarrhoea",
+		"children":[
+			{
+				"name":"Total count(1658)",
+				"children":[
+					{"name":"Serious Report (-)", "size":"459"},
+					{"name":"Not Serious (-)", "size":"176"}
+				]
+			},
+			{"name":"Score (0.3)", "size":"30"}
+		]
+	},
+	{
+		"name":"Hypoglycaemia",
+		"children":[
+			{
+				"name":"Total count(160)",
+				"children":[
+					{"name":"Serious Report (-)", "size":"459"},
+					{"name":"Not Serious (-)", "size":"176"}
+				]
+			},
+			{"name":"Score (0.3)", "size":"30"}
+		]
+	},
+	{
+		"name":"Lactic acidosis",
+		"children":[
+			{
+				"name":"Total count(129)",
+				"children":[
+					{"name":"Serious Report (-)", "size":"459"},
+					{"name":"Not Serious (-)", "size":"176"}
+				]
+			},
+			{"name":"Score (0.85)", "size":"0.85"}
+		]
+	},
+	{
+		"name":"Respiratory failure",
+		"children":[
+			{
+				"name":"Total count(420)","size":"26"
+			},
+			{"name":"Score (0.95)", "size":"0.95"}
+		]
+	},
+	{
+		"name":"Benign prostatic hyperplasia",
+		"children":[
+			{
+				"name":"Total count(39)","size":"26"
+			},
+			{"name":"Score (0.18)", "size":"0.18"}
+		]
+	},
+	{
+		"name":"Urinary retention",
+		"children":[
+			{
+				"name":"Total count(112)","size":"26"
+			},
+			{"name":"Score (0.3)", "size":"30"}
+		]
+	},
+	{
+		"name":"Urinary incontinence",
+		"children":[
+			{
+				"name":"Total count(141)","size":"26"
+			},
+			{"name":"Score (0.3)", "size":"30"}
+		]
+	},
+	{
+		"name":"Nightmare",
+		"children":[
+			{
+				"name":"Total count(125)","size":"26"
+			},
+			{"name":"Score (0.04)", "size":"4"}
+		]
+	},
+	{
+		"name":"Anaemia",
+		"children":[
+			{
+				"name":"Total count(1259)","size":"26"
+			},
+			{"name":"Score (0.26)", "size":"26"}
+		]
+	},
+	{
+		"name":"Diaphragmatic hernia",
+		"children":[
+			{
+				"name":"Total count(4)","size":"30"
+			},
+			{"name":"Score (0.16)", "size":"30"}
+		]
+	}
+]
+
+
+}

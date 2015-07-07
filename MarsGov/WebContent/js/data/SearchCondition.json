@@ -1,0 +1,63 @@
+{"total":9,
+		
+	"rows":[
+		{"name":"Receive Date From","value":"","group":"Basic Information","editor":"datebox","parameters":"receivedate[From]"
+		},
+		{"name":"Receive Date To","value":"","group":"Basic Information","editor":"datebox","parameters":"receivedate[To]"},
+		{"name":"Start Date","value":"","group":"Drug Paramters","editor":"datebox","parameters":"patient.drug.drugstartdate"},
+		{"name":"End Date","value":"","group":"Drug Paramters","editor":"datebox","parameters":"patient.drug.drugenddate"},
+		{"name":"Medicinal Product","value":"","group":"Drug Paramters",
+				"editor":{"type":"combobox",
+						"options":{
+							"url":"js/data/searchOptionDrugMedicinalProduct.json",
+							"valueField":"id",
+							"textField":"text"
+						 }},
+				"parameters":"patient.drug.medicinalproduct" 
+				},	
+		{"name":"Product Type","value":"","group":"Drug Paramters",
+				"editor":{"type":"combobox",
+						"options":{
+							"url":"js/data/searchOptionDrugProductType.json",
+							"valueField":"id",
+							"textField":"text"
+						 }},
+				"parameters":"patient.drug.product_type" 
+				},	
+		{"name":"Indication","value":"","group":"Drug Paramters",
+				"editor":{"type":"combobox",
+						"options":{
+							"url":"js/data/searchOptionDrugIndication.json",
+							"valueField":"id",
+							"textField":"text"
+						 }},
+				"parameters":"patient.drug.drugindication" 
+				},	
+					
+		{"name":"Dosage Text","value":"","group":"Drug Paramters","editor":"text","parameters":"patient.drug.drugdosagetext"},
+		{"name":"Set age","value":"","group":"Patient Information","editor":"numberbox","parameters":"patient.patientonsetage"},
+		{"name":"Set age unit","value":"","group":"Patient Information","editor":"numberbox","parameters":"patient.patientonsetageunit"},
+		{"name":"Reaction","value":"", "group":"Patient Information", 
+				"editor":{"type":"combobox",
+						"options":{
+							"url":"js/data/searchOptionReaction.json",
+							"valueField":"id",
+							"textField":"text"
+						 }},
+				"parameters":"patient.reactionmeddrapt"},
+		{"name":"Brand Name","value":"", "group":"Open Fda", "editor":"text","parameters":"patient.openfda.brand_name"},
+		{"name":"Skip Record(s)","value":"", "group":"Functionality", "editor":"numberbox","parameters":"skip"},
+		{"name":"Limit Record(s) ","value":"10", "group":"Functionality", "editor":"numberbox","parameters":"limit"},
+		{"name":"Index Name","value":"", "group":"Count", 
+				"editor":{"type":"combobox",
+						"options":{
+							"url":"js/data/searchOptionCount.json",
+							"valueField":"value",
+							"textField":"name",
+							"groupField":"group"
+						 }},
+				"parameters":"Index"}
+		
+	]
+	
+}

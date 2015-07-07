@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<project name="MarsGov" default="deploy" basedir="." >  
+    <description>Deploy system as a war</description>  
+      
+    <!-- Define necessary information -->  
+    <!-- web container information    -->  
+    <property name="tomcat.home" value="C:/java/servers/tomcat7"></property>  
+    <property name="webapps.home" value="C:/java/servers/tomcat7/webapps"></property>  
+      
+    <!-- project information -->  
+    <property name="app.home" value="."></property>  
+    <property name="app.name" value="MarsGov"></property>  
+    <property name="javadoc.pkg" value="help"></property>  
+      
+    <property name="src.home" value="${app.home}/src">
+    	
+    </property>  
+    <property name="web.home" value="${app.home}/WebContent"></property>  
+    <property name="lib.home" value="${web.home}/WEB-INF/lib"></property>  
+	
+    <property name="classes.home" value="${web.home}/WEB-INF/classes"></property>  
+    <property name="doc.home" value="${app.home}/doc"></property>  
+    <property name="app.lib" value="${app.home}/libs" />
+    <property name="build.home" value="${app.home}/build"></property>  
+    <property name="build.classes" value="${build.home}/WEB-INF/classes"></property>  
+    <property name="build.lib" value="${build.home}/WEB-INF/lib"></property>  
+	
+          
+    <!-- 
+    	copy war file to special folder. So only copy this file to ${Webapp.home}
+    -->  
+    <property name="deploy.home" value="${app.home}/deploy"></property>  
+      
+    <!-- 
+    	all necessary jars 
+     -->  
+    <path id="compile.classpath">  
+        <pathelement location="${classes.home}" />  
+        <fileset dir="${lib.home}">  
+            <include name="*.jar" />  
+            <include name="*.zip" />  
+        </fileset>  
+    	<fileset dir="${app.lib}">
+    		<include name="*.jar" />  
+    		<include name="*.zip" />  
+    	</fileset>          
+        <fileset dir="${tomcat.home}/lib">  
+            <include name="*.jar"/>  
+        </fileset>  
+        <pathelement location="${tomcat.home}/classes"/>        
+    </path>  
+      
+    <!-- 
+    	delete all old files
+     -->       
+    <target name="clean_all">  
+        <delete dir="${build.home}"></delete>  
+        <delete dir="${classes.home}"></delete>  
+        <delete dir="${deploy.home}"></delete>  
+          
+        <delete dir="${webapps.home}/${app.name}" failonerror="false"></delete>  
+        <delete dir="${webapps.home}/${app.name}.war"></delete>  
+          
+        <delete dir="${doc.home}"></delete>  
+    </target>  
+      
+   
+    <target name="prepare" depends="clean_all">  
+        <echo message="Tomacat Home=${tomcat.home}"></echo>  
+        <echo message="webapps Home=${webapps.home}"></echo>  
+        <echo message="app home=${app.home}"/>
+    	<echo message="src home = ${src.home}" />
+        <mkdir dir="${classes.home}"/>  
+        <mkdir dir="${deploy.home}"/>  
+        <mkdir dir="${doc.home}"/>  
+        <mkdir dir="${doc.home}/api"/>  
+          
+        <mkdir dir="${build.home}"/>  
+        <mkdir dir="${build.home}/WEB-INF"/>  
+        <mkdir dir="${build.home}/WEB-INF/classes"/>  
+        <mkdir dir="${build.home}/WEB-INF/lib"/>  
+    </target>  
+              
+    <!-- compile all files -->      
+    <target name="compile" depends="prepare">  
+    	
+        <javac srcdir="${src.home}" destdir="${classes.home}" debug="yes">         	
+            <classpath refid="compile.classpath"></classpath>      
+        	
+        </javac>  
+    </target>  
+                  
+    
+    <target name="build" depends="compile">  
+        <copy todir="${build.home}">  
+            <fileset dir="${web.home}"></fileset>  
+        </copy>  
+          
+        <copy todir="${build.classes}">  
+            <fileset dir="${classes.home}"></fileset>  
+        </copy>  
+        <copy todir="${build.classes}">  
+            <!-- jar -->  
+            <fileset dir="${src.home}">  
+                <include name="**/*.properties" />  
+                <include name="**/*.xml" />  
+            	
+            </fileset>  
+        </copy>  
+    	
+    	<copy todir="${build.lib}">  
+    		<fileset dir="${app.lib}"></fileset>  
+    	</copy>  
+        <copy todir="${build.lib}">  
+            <fileset dir="${lib.home}"></fileset>  
+        </copy>  
+        <!-- to war file -->  
+        <jar jarfile="${deploy.home}/${app.name}.war"   
+            basedir="${build.home}">  
+        </jar>  
+    </target>  
+      
+    <!-- deploy, copy ${deploy.home}/${app.name}.war to web -->  
+    <target name="deploy" depends="build">  
+        <copy todir="${webapps.home}" file="${deploy.home}/${app.name}.war"></copy>  
+    </target>  
+      
+    <!-- generate docs -->  
+    <target name="javaDoc" depends="compile">  
+        <javadoc source="${src.home}"  
+                destdir="${doc.home}/api"  
+                packagenames="%{javadoc.pkg}.*">  
+        </javadoc>  
+    </target>  
+  
+</project> 

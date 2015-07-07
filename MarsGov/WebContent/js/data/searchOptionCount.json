@@ -1,0 +1,14 @@
+[
+
+{"name":"Receive Date","value":"receivedate","group":"Basic Information"},
+{"name":"Start Date","value":"drug.drugstartdate","group":"Drug"},
+{"name":"End Date","value":"drug.drugenddate","group":"Drug"},
+{"name":"Medicinal Product","value":"patient.drug.medicinalproduct","group":"Drug"},
+{"name":"Dosage Text","value":"patient.drug.drugdosagetext","group":"Drug"},
+{"name":"Set age","value":"patient.patientonsetage","group":"Patient"},
+{"name":"Set age unit","value":"patient.patientonsetageunit","group":"Patient"},
+{"name":"Reaction","value":"patient.reactionmeddrapt", "group":"Patient"},
+{"name":"Brand Name","value":"patient.openfda.brand_name", "group":"Open Fda"},
+{"name":"Product Type","value":"patient.openfda.product_type", "group":"Open Fda"}
+
+]  

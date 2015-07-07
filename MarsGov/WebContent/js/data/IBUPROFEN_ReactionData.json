@@ -1,0 +1,34 @@
+{
+	"rows":[
+		{"reaction":"Dyspepsia","totalCount":"635","score":0.6,"serious1":"459","serious2":"176"},
+{"reaction":"Renal impairment","totalCount":"271","score":0.95,"serious1":"269","serious2":"2"},
+{"reaction":"Lethargy","totalCount":"301","score":0.05,"serious1":"277","serious2":"24"},
+{"reaction":"Weight decreased","totalCount":"940","score":0.1,"serious1":"","serious2":""},
+{"reaction":"Malaise","totalCount":"1128","score":0.3,"serious1":"","serious2":""},
+{"reaction":"Renal impairment","totalCount":"271","score":0.4,"serious1":"","serious2":""},
+{"reaction":"Diarrhoea","totalCount":"1658","score":0.8,"serious1":"","serious2":""},
+{"reaction":"Hypoglycaemia","totalCount":"160","score":0.72,"serious1":"","serious2":""},
+{"reaction":"Lactic acidosis","totalCount":"129","score":0.85,"serious1":"","serious2":""},
+{"reaction":"Respiratory failure","totalCount":"420","score":0.95,"serious1":"","serious2":""},
+{"reaction":"Benign prostatic hyperplasia","totalCount":"39","score":0.18,"serious1":"","serious2":""},
+{"reaction":"Urinary retention","totalCount":"112","score":0.2,"serious1":"","serious2":""},
+{"reaction":"Urinary incontinence","totalCount":"141","score":0.3,"serious1":"","serious2":""},
+{"reaction":"Nightmare","totalCount":"125","score":0.04,"serious1":"","serious2":""},
+{"reaction":"Anaemia","totalCount":"1259","score":0.26,"serious1":"","serious2":""},
+{"reaction":"Diaphragmatic hernia","totalCount":"4","score":0.16,"serious1":"","serious2":""},
+{"reaction":"Drug reaction with eosinophilia and systemic symptoms","totalCount":"37","score":0.7,"serious1":"","serious2":""},
+{"reaction":"Hepatic failure","totalCount":"358","score":0.98,"serious1":"","serious2":""},
+{"reaction":"Blood urea increased","totalCount":"214","score":0.15,"serious1":"","serious2":""},
+{"reaction":"Blood creatinine increased","totalCount":"435","score":0.2,"serious1":"","serious2":""},
+{"reaction":"Pericardial effusion","totalCount":"80","score":0.8,"serious1":"","serious2":""},
+{"reaction":"Pleural effusion","totalCount":"324","score":0.8,"serious1":"","serious2":""},
+{"reaction":"Arthralgia","totalCount":"1411","score":0.47,"serious1":"","serious2":""},
+{"reaction":"Myalgia","totalCount":"661","score":0.38,"serious1":"","serious2":""},
+{"reaction":"Pyrexia","totalCount":"1486","score":0.19,"serious1":"","serious2":""},
+{"reaction":"Choluria","totalCount":"6","score":0.1,"serious1":"","serious2":""},
+{"reaction":"Abdominal pain","totalCount":"2467","score":0.12,"serious1":"","serious2":""},
+{"reaction":"Rash erythematous","totalCount":"204","score":0.13,"serious1":"","serious2":""}
+
+
+	]
+}
