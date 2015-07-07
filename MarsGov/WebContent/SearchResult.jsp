@@ -38,8 +38,8 @@
 					showGroup:true,
 					scrollbarSize:0,
 					columns:[[
-				        {'field':'name','title':'name','width':'39%'},
-				        {'field':'value','title':'value','width':'50%'},
+				        {'field':'name','title':'Name','width':'39%'},
+				        {'field':'value','title':'Value','width':'50%'},
 				        {'field':'parameters','hidden':'true'}]],
 				    
 				    	onLoadSuccess:function(data){ ConditionLoadOk(data) ;}
@@ -60,12 +60,13 @@
 					<div class="demo-info" style="margin-bottom:10px; ">
 				        <div class="demo-tip icon-tip">&nbsp;</div>
 				        <span><b>Usage:</b><br/>
-				        Data mining is used widely. The basic tool of it is "drill down/up". The page is a demo for drilling up based on the data from Open.FDA.gov. 
-				        <br/>Click cells with words "click for more", and new sub grid will drill down with more details. For demo,<b> only <font color="red">three levels</font> is supported</b>. In theory, unlimited drilling down can support. 
-				         
-				        </span>		
-						
-				    </div>
+				        Data mining enables discovering interesting and useful patterns from large volumes of data. Below is an implementation of the process. The concept of "drill down/up" is used and this page is a demo for drilling up based on the data from 
+				        <a href="Open.FDA.gov" target="_blank">Open.FDA.gov</a>
+<br/>
+Click cells with words "click for more", 
+and new sub grid will drill down with more details. 
+Three levels of drill down information are supported for demo purposes and in theory, unlimited levels of drilling down can be supported. 
+				        				    </div>
 				    <div style="margin:0 auto">
 					    <table id="dg" style="width:950px;height:420px;overflow:auto"				            
 					            pagination="true" sortName="itemid" sortOrder="desc"
@@ -96,15 +97,15 @@
 				    </div>
 				    
 				</div>
-				<div title="IBUPROFEN Report Alyst">
+				<div title="IBUPROFEN Report">
 					<div class="demo-info" style="margin-bottom:10px; ">
 				        <div class="demo-tip icon-tip">&nbsp;</div>
 				        <span><b>Usage:</b><br/>
-				        This is a demo showing <b>"IBUPROFEN"</b> Report detail information from "serious" dimension. "Serious" and "Reaction" are reported from FDA APIs. Our demo collected 27 kinds of reaction. And a tree graph using <b>SVG</b> is applied.
-				        <br/> The column "score" is not from APIs <font color="red">JUST FOR TEST</font>, which shows a "serious" number from 0~1.0. The higher number means more serious.
-				        <br/> <b><font color="blue">Click below to GET FULL VISION </font></b>
+				        This is a demo showing "IBUPROFEN" Report that contains detailed information from "serious" dimension. "Serious" and "Reaction" are reported from FDA APIs. Our demo collected 27 kinds of reaction after which a tree graph using SVG is applied.
+<br/>
+The column "score" which show numbers from 0 to 1.0 are not from the APIs and are for testing purposes. The higher the number the more serious the reaction.
 				        </span>		
-						<br/><a href="DrugTreeGrph.html" target="_blank"> show in separate Window </a>
+						<br/><a href="DrugTreeGrph.html" target="_blank"> Show Report in separate Window </a>
 				    </div>
 				    <div style="margin:0 auto;float:left">
 					    <table id="IBUPROFENREPORT" style="width:400px;height:420px;overflow:auto"				            
@@ -130,13 +131,16 @@
 					<iframe src="DrugTreeGrph.html" marginwidth="0" marginheight="0" scrolling="no" style="height: 410px;width:1024px"></iframe>
 				</div>
 			</div>
-			<div title="IBUPROFEN HeatMap Alyst">
+			<div title="IBUPROFEN HeatMap">
 					<div class="demo-info" style="margin-bottom:10px; ">
 				        <div class="demo-tip icon-tip">&nbsp;</div>
 				        <span><b>Usage:</b><br/>
-				        <br/> With widely using of Heatmap in researching field, Heatmap can help users get useful information from BIG Data. The demo contains data from 20130601 to 20140630. 
-				        No data after 20140630 about IBUPROFEN report. Report number for "serious='1'" and total report number are getten from FDA APIs for each month.
-				        <br/> To Create the heatmap, total report count of each month and reports with "Serious=1", means very serious based on FDA web site, in the same month are applied. 
+				        <br/>Heat maps can help user get useful information from BIG Data. 
+				        The demo contains data from 2013/06/01 to 2014/06/30. 
+				        Report number for "Serious" = '1' and total 
+				        report numbers for each month are obtained from FDA APIs. 
+				        The total report count of each month and reports with "Serious=1" are used to create a heat map. 
+ 
 				        </span>		
 				    </div>
 				    
