@@ -134,12 +134,10 @@
 					<div class="demo-info" style="margin-bottom:10px; ">
 				        <div class="demo-tip icon-tip">&nbsp;</div>
 				        <span><b>Usage:</b><br/>
-				        Heatmap is using data from table in tab "IBUPROFEN Report Alyst". 
 				        <br/> With widely using of Heatmap in researching field, Heatmap can help users get useful information from BIG Data. The demo contains data from 20130601 to 20140630. 
-				        No data after 20140630 about IBUPROFEN report. 
+				        No data after 20140630 about IBUPROFEN report. Report number for "serious='1'" and total report number are getten from FDA APIs for each month.
 				        <br/> To Create the heatmap, total report count of each month and reports with "Serious=1", means very serious based on FDA web site, in the same month are applied. 
 				        </span>		
-						<br/><a href="DrugTreeGrph.html" target="_blank"> show in separate Window </a>
 				    </div>
 				    
 				<div id="treeGraph" style="float:left;width:790px;height:410px;border:1px lightgray solid">
