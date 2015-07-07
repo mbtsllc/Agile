@@ -5,12 +5,14 @@
 The following instructions details the installation of the prototype on Linus Ubuntu 15.04
 
 Install the dependencies
+
 1. Java Runtime Environment  (JRE)
 1. Apache Tomcat 
 
 **Install Java Runtime Environment (JRE)**
 
 The following steps will install OpenJRE Ubuntu. Installing Java with apt-get 
+
 1. Update the package index: sudo apt-get update
 1. Then, check if Java is not already installed: java –version
 1. If it returns "The program java can be found in the following packages", Java hasn't been installed yet, so execute the following command: sudo apt-get install default-jre. This will install the Java Runtime Environment (JRE). 
@@ -21,6 +23,7 @@ The following steps will install OpenJRE Ubuntu. Installing Java with apt-get
 **Install Apache Tomcat**
 
 The following steps will install Apache Tomcat on the Linux server>
+
 1. Update your apt-get package lists: sudo apt-get update
 1. Run the following command to start the installation: sudo apt-get install tomcat7. This will install Tomcat and its dependencies and it will also create the tomcat7 user. It also starts Tomcat with its default settings.
 1. Check that Tomcat has been installed and running by accessing the default splash page by going to the domain: [http://server_IP_address:8080](http://server_IP_address:8080)
