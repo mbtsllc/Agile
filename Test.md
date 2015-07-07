@@ -8,11 +8,11 @@
 - [ ] **Test 2**: Select any of the fields in the Search Condition area to enter value or information
 - [ ] **Result**: The search fields accepts valid answers (numbers for age) and rejects invalid answers (special characters)
 
-- [ ] **Test 3**: Click 'Search' after entering valid value or information in thr Search Condition area
+- [ ] **Test 3**: Click 'Search' after entering valid value or information in the Search Condition area
 - [ ] **Result**: The search returns relevant results and shows 'click for more' when additional information is available
 
 - [ ] **Test 4**: Click on the 'click for more' + sign
-- [ ] **Result**: The + sign allows user to dril down upto 3 levels (3 for demo purposes) and pressing the - allows the user to drill up
+- [ ] **Result**: The '+' sign allows user to dril down upto 3 levels (3 for demo purposes) and pressing the '-' sign allows the user to drill up
 
 ![](https://github.com/mbtsllc/Agile/blob/master/Images/Test-img2.jpg)
 
