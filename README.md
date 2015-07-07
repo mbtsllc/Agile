@@ -2,7 +2,7 @@
 
 [**Marquis Business and Technology Solutions**](http://mbtsllc.com/) is pleased to present The Agile Project prototype to the GSA.
 
-**Prototype Website**: [**mbtsllc.cloudapp.net:8080**](mbtsllc.cloudapp.net:8080)
+**Prototype Website**: [**mbtsllc.cloudapp.net:8080**](http://mbtsllc.cloudapp.net:8080)
 
 **GitHub Project Website**: [**https://github.com/mbtsllc/Agile**](https://github.com/mbtsllc/Agile)
 
@@ -48,7 +48,7 @@ JavaServer Pages (JSP) is implemented as the view component of a server-side mod
 
 ##### 4.2 Control Layer
 
-The Apache Struts 2 forms the control layer of the prototype designed
+The Apache Struts 2 forms the control layer of the prototype designed.
 
 ##### 4.3 Model Layer
 
@@ -93,7 +93,7 @@ The diagram below shows the high-level process flow from development to deployme
 
 Detailed instructions for installation can be found in the [Intallation-Instructions.md file.](https://github.com/mbtsllc/Agile/blob/master/Installation-Instructions.md)
 
-#### Unit Testing
+#### Testing
 
 The JUnit test framework is incorporated within the prototype design to assist with the testing. Information on testing can be found in the [Test.md file.](https://github.com/mbtsllc/Agile/blob/master/Test.md)
 
