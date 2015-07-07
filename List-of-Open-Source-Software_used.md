@@ -1,4 +1,4 @@
-The following Open Source Softare was used for the development of the prototype:
+The following Open Source Software was used for the development of the prototype:
 
 | # | Software | Purpose | Version | License |
 |--------|--------|--------|--------|--------|
